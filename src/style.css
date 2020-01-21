@@ -10,10 +10,19 @@ body {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(4,1fr);
+  grid-template-areas:
+  "header header navigation"
+  "main   main   section"
+  "main   main   section"
+  "section2 section2 footer";
   grid-gap: 1rem 0.5rem;
 }
 
 body > * {
   background-color: yellow;
   color:black;
+}
+
+body > header {
+  grid-area:header
 }
