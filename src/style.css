@@ -13,7 +13,7 @@ body {
   "main     main     section" 1fr
   "main     main     section" 1fr
   "section2 section2 footer" 1fr
-  / 1fr      1fr      2fr;
+  / 1fr      1fr      1fr;
   grid-gap: 1rem 0.5rem;
 }
 
