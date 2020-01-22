@@ -25,6 +25,11 @@ body > header {
   background-color: yellow;
   grid-area:header
 }
+@media screen AND (min-width:768px){
+  body > header {
+    background-color: blue;
+  }
+}
 body > nav {
   grid-area:navigation;
   background-color:green;
