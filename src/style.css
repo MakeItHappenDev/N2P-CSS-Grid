@@ -9,12 +9,25 @@ body {
   min-height:100vh;
   display:grid;
   grid-template:
-  "header   header   navigation" 1fr
-  "main     main     section" 1fr
-  "main     main     section" 1fr
-  "section2 section2 footer" 1fr
-  / 1fr      1fr      1fr;
-  grid-gap: 1rem 0.5rem;
+  "navigation" auto
+  "header" auto
+  "main" auto
+  "section" auto
+  "section2" auto
+  "footer" auto
+  / 1fr;
+  gap: 0.5rem;
+}
+@media screen AND (min-width:768px){
+  body{
+    grid-template:
+    "header   header   navigation" 1fr
+    "main     main     section" 1fr
+    "main     main     section" 1fr
+    "section2 section2 footer" 1fr
+    / 1fr      1fr      1fr;
+    gap: 1rem 0.5rem;
+  }
 }
 
 body > * {
