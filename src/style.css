@@ -19,7 +19,7 @@ body {
   / 1fr;
   gap: 0.5rem;
 }
-@media screen AND (min-width:768px){
+@media screen AND (min-width:468px){
   body{
     grid-template:
     "header   header   navigation" 1fr
@@ -27,23 +27,31 @@ body {
     "main     main     section" 1fr
     "section2 section2 footer" 1fr
     / 1fr      1fr      1fr;
-    gap: 1rem 0.5rem;
+    gap: 0.5rem;
+  }
+}
+@media screen AND (min-width:768px){
+  body{
+    grid-template:
+    "navigation navigation navigation navigation" auto
+    ".......... header     header     .........." 2fr
+    ".......... main       main       .........." 1fr
+    ".......... section    section2   .........." 1fr
+    ".......... .........  ........   .........." 1fr
+    "footer     footer     footer     footer" auto
+    / 1fr       1fr        1fr        1fr;
+    gap: 0.5rem;
   }
 }
 
 body > * {
   color:black;
 }
-
 body > header {
   background-color: yellow;
   grid-area:header
 }
-@media screen AND (min-width:768px){
-  body > header {
-    background-color: blue;
-  }
-}
+
 body > nav {
   grid-area:navigation;
   background-color:green;
