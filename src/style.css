@@ -22,11 +22,13 @@ body {
 @media screen AND (min-width:768px){
   body{
     grid-template:
-    "header   header   navigation" 1fr
-    "main     main     section" 1fr
-    "main     main     section" 1fr
-    "section2 section2 footer" 1fr
-    / 1fr      1fr      1fr;
+    "navigation navigation navigation navigation" auto
+    ".          header     header     ...." 2fr
+    "...        main       main       ....." 1fr
+    ".......... section    section2   ....." 1fr
+    ".......... .......... ........    ....." 1fr
+    "footer      footer    footer      footer" auto
+    /1fr         350px     350px      1fr;
     gap: 1rem 0.5rem;
   }
 }
