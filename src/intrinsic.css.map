@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACF,OAAO,EAAC,IAAI;EACZ,SAAS,EAAE,IAAI;CAShB;;AAXD,AAGE,IAHE,GAGA,CAAC,CAAC;EACF,IAAI,EAAC,QAAQ;EACb,OAAO,EAAC,IAAI;EACZ,gBAAgB,EAAC,KAAK;EACtB,YAAY,EAAC,IAAI;EACjB,aAAa,EAAE,IAAI;EACnB,KAAK,EAAC,KACR;CAAC",
+    "sources": [
+        "intrinsic.scss"
+    ],
+    "names": [],
+    "file": "intrinsic.css"
+}

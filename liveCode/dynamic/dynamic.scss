@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #303030;
+  color:#f0f0f0;
+  margin:0;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+
+  gap:0.5rem;
+  div {
+    background-color:black;
+    padding-top:calc(100%);
+    background-image: url('/src/image/tutur.JPG');
+    background-position: 50% 50%;
+    background-size: cover;
+    &.hz {
+      padding-top:calc(100% / 3 * 2);
+      background-image: url('/src/image/NZ.JPG');
+    }
+    &.vt {
+      background-image: url('/src/image/astro.JPG');
+      padding-top:calc(100% / 2 * 3);
+    }
+  }
+}
