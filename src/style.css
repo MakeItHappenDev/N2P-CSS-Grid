@@ -1,75 +1,73 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   background-color: #303030;
-  color:#f0f0f0;
-  margin:0;
-  min-height:100vh;
-  display:grid;
-  grid-template:
-  "navigation" auto
-  "header" auto
-  "main" auto
-  "section" auto
-  "section2" auto
-  "..." 1fr
-  "footer" auto
-  / 1fr;
+  color: #f0f0f0;
+  margin: 0;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "navigation" auto "header" auto "main" auto "section" auto "section2" auto "..." 1fr "footer" auto / 1fr;
   gap: 0.5rem;
 }
-@media screen AND (min-width:468px){
-  body{
-    grid-template:
-    "header   header   navigation" 1fr
-    "main     main     section" 1fr
-    "main     main     section" 1fr
-    "section2 section2 footer" 1fr
-    / 1fr      1fr      1fr;
+
+@media screen and (min-width: 468px) {
+  body {
+    grid-template: "header   header   navigation" 1fr "main     main     section" 1fr "main     main     section" 1fr "section2 section2 footer" 1fr / 1fr      1fr      1fr;
     gap: 0.5rem;
   }
 }
-@media screen AND (min-width:768px){
-  body{
-    grid-template:
-    "navigation navigation navigation navigation" auto
-    ".......... header     header     .........." 2fr
-    ".......... main       main       .........." 1fr
-    ".......... section    section2   .........." 1fr
-    ".......... .........  ........   .........." 1fr
-    "footer     footer     footer     footer" auto
-    / 1fr       1fr        1fr        1fr;
+
+@media screen and (min-width: 768px) {
+  body {
+    grid-template: "navigation navigation navigation navigation" auto ".......... header     header     .........." 2fr ".......... main       main       .........." 1fr ".......... section    section2   .........." 1fr ".......... .........  ........   .........." 1fr "footer     footer     footer     footer" auto / 1fr       1fr        1fr        1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    grid-template: "navigation navigation navigation section" 1fr "header     main       main       section" 1fr "header     main       main       section" 1fr "header     main       main       section2" 1fr "header     main       main       section2" 1fr "header     footer     footer     footer" 1fr / 1fr       1fr        1fr        1fr;
     gap: 0.5rem;
   }
 }
 
 body > * {
-  color:black;
+  padding: 1rem;
+  color: black;
+  font-size: 2rem;
 }
+
 body > header {
   background-color: yellow;
-  grid-area:header
+  grid-area: header;
 }
 
 body > nav {
-  grid-area:navigation;
-  background-color:green;
+  grid-area: navigation;
+  background-color: green;
 }
+
 body > main {
-  grid-area:main;
+  grid-area: main;
   background-color: red;
 }
-body > section:first-of-type{
-  grid-area:section;
+
+body > section:first-of-type {
+  grid-area: section;
   background-color: aqua;
 }
-body > section:nth-of-type(2){
-  grid-area:section2;
+
+body > section:nth-of-type(2) {
+  grid-area: section2;
   background-color: brown;
 }
 
 body > footer {
-  grid-area:footer;
+  grid-area: footer;
   background-color: chocolate;
 }
+/*# sourceMappingURL=style.css.map */
