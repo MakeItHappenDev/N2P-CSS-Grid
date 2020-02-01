@@ -4,10 +4,23 @@
 }
 
 body {
-  background-color: #303030;
-  color: #f0f0f0;
+  background-color: #FFFFFF;
+  color: #303030;
   margin: 0;
   min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header  .....   ...." 100px "header  main     ......" 25px "section section2 section3" 3rem "....... ........ ........" 1fr "footer footer    footer" auto/300px 1fr 15rem;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    grid-template: "header  header   header" 100px "......  main     ......" 25px "section section2 section3" 3rem "....... ........ ........" 1fr "footer footer    footer" auto/300px 1fr 15rem;
+  }
+}
+
+body > header {
+  grid-area: header;
 }
 
 body > * {

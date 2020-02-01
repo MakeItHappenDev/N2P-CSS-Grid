@@ -3,13 +3,22 @@
 }
 
 body{
-  background-color: #303030;
-  color:#f0f0f0;
+  background-color: #FFFFFF;
+  color:#000000;
   margin:0;
   display:grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(10,1fr);
+  grid-auto-flow: row;
 
   gap:0.5rem;
+
+ > div:first-child{
+   grid-row-start: 1;
+  grid-row-end:span 2;
+  grid-column-start: 1;
+  grid-column-end: -1;
+ }
+
   div {
     background-color:black;
     padding-top:calc(100%);
