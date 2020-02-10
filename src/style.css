@@ -22,14 +22,22 @@ body {
 @media screen AND (min-width:768px){
   body{
     grid-template:
-    "navigation navigation navigation navigation" auto
+    "navigation navigation navigation navigation" 100px
     ".          header     header     ...." 2fr
     "...        main       main       ....." 1fr
     ".......... section    section2   ....." 1fr
     ".......... .......... ........    ....." 1fr
-    "footer      footer    footer      footer" auto
+    "footer      footer    footer      footer" 100px
     /1fr         350px     350px      1fr;
     gap: 1rem 0.5rem;
+  }
+  body::before{
+    content:"";
+    background-color:yellow;
+    grid-row-start:3;
+    grid-row-end:5;
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }
 
