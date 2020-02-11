@@ -48,7 +48,7 @@ body > * {
 
 body > header {
   background-color: yellow;
-  grid-area:header
+  grid-area:header;
 }
 @media screen AND (min-width:768px){
   body > header {
