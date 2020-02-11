@@ -35,9 +35,9 @@ body {
     content:"";
     background-color:yellow;
     grid-row-start:3;
-    grid-row-end:5;
+    grid-row-end:span 3;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: span 2;
   }
 }
 
