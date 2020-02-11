@@ -22,8 +22,9 @@ body {
 @media screen AND (min-width:768px){
   body{
     grid-template:
-    "navigation navigation navigation navigation" 100px
-    ".          header     header     ...." 2fr
+    "topleft    navigation navigation topright" 100px
+    "topleft    header     header     topright" 1fr
+    ".          header     header     ...." 1fr
     "...        main       main       ....." 1fr
     ".......... section    section2   ....." 1fr
     ".......... .......... ........    ....." 1fr
@@ -33,11 +34,11 @@ body {
   }
   body::before{
     content:"";
-    background-color:yellow;
-    grid-row-start:header-start;
-    grid-row-end:section-end;
-    grid-column-start: main-start;
-    grid-column-end: section-end;
+    background-color:#202020;
+    grid-row-start:topleft-start;
+    grid-row-end:topright-end;
+    grid-column-start: topleft-start;
+    grid-column-end: topright-end;
   }
 }
 
