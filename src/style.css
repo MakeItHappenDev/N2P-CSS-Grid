@@ -35,10 +35,12 @@ body {
   body::before{
     content:"";
     background-color:#202020;
-    grid-row-start:topleft-start;
-    grid-row-end:topright-end;
-    grid-column-start: topleft-start;
-    grid-column-end: topright-end;
+    grid-area: topleft-start / topleft-start / topright-end / topright-end;
+  }
+  body::after {
+    content: "";
+    background-color: rgba(0,0,0,0.5);
+    grid-area: header;
   }
 }
 
