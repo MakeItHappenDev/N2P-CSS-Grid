@@ -40,7 +40,7 @@ body {
   body::after {
     content: "";
     background-color: rgba(0,0,0,0.5);
-    grid-area: header;
+    grid-area: 1 / 1 / -1 / -1;
   }
 }
 
