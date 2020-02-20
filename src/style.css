@@ -39,17 +39,27 @@ body {
   }
   body::after {
     content: "";
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.9);
     grid-area: 1 / 1 / -1 / -1;
   }
   body > modal {
-    background-color: yellow;
+    background-color: #303030;
+    padding:2rem;
+    border:1px solid #c0c0c0;
+    color:white;
     grid-area: 1 / 1 / -1 / -1;
     z-index: 2;
     display:grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 100px;
     place-self: center center;
+  }
+  body > modal > h1 {
+    grid-column: span 2;
+  }
+  
+  body > modal > input {
+    grid-column: span 2;
+    padding:1rem;
   }
 }
 
