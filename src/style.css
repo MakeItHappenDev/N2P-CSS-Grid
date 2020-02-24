@@ -52,10 +52,12 @@ body {
     z-index: 2;
     display:grid;
     grid-template-columns: 300px 1fr min-content;
+    grid-auto-rows: auto;
     place-self: center center;
   }
   body > modal > h1 {
     grid-column: 1 / -1;
+    margin:0;
   }
   
   body > modal > input {
