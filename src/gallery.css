@@ -17,8 +17,18 @@ body > div {
 
 body > div.horizontal {
   background-color: teal;
+  order:-1;
 }
 
 body > div.vertical {
   background-color: tomato;
+  order:2;
+}
+
+body > div.square {
+  background-color: violet;
+  order:4;
+  grid-column: 1 / span 3;
+  grid-row:1 / span 2;
+  height:auto;
 }
